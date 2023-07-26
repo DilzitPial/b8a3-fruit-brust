@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Fruit Brust</title>
+    <link rel="shortcut icon" href="./images/logo.png" type="image/x-icon" />
     <link
       href="https://cdn.jsdelivr.net/npm/daisyui@3.5.0/dist/full.css"
       rel="stylesheet"
@@ -24,9 +25,64 @@
   </head>
   <body>
     <header>
+      <nav
+        class="bg-[#F85559] rounded-e-full rounded-s-full mx-auto items-center mt-8 lg:mx-20 lg:mt-12"
+      >
+        <div class="navbar flex justify-between px-10">
+          <div class="navbar-start hidden lg:flex">
+            <ul class="menu menu-horizontal">
+              <li class="text-base font-lato font-medium text-white"><a>Home</a></li>
+              <li class="text-base font-lato font-medium text-white"><a>About Us</a></li>
+              <li class="text-base font-lato font-medium text-white"><a>Shop</a></li>
+              <li class="text-base font-lato font-medium text-white"><a>All Fruits</a></li>
+            </ul>
+          </div>
+          <div class="navbar-center">
+            <a href=""><img src="./images/logo.png" alt="" /></a>
+            <a class="btn btn-ghost normal-case text-2xl font-lato font-bold text-white">Fruit Burst</a>
+          </div>
+          <div class="navbar-end">
+            <div class="dropdown">
+              <label tabindex="0" class="btn btn-ghost lg:hidden">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="h-5 w-5"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M4 6h16M4 12h8m-8 6h16"
+                  />
+                </svg>
+              </label>
+              <ul
+                tabindex="0"
+                class="menu menu-sm dropdown-content mt-3 z-[1] p-1 shadow bg-base-100 rounded-box w-52"
+              >
+                <li class="text-base font-lato font-medium"><a>Home</a></li>
+                <li class="text-base font-lato font-medium"><a>About Us</a></li>
+                <li class="text-base font-lato font-medium"><a>Shop</a></li>
+                <li class="text-base font-lato font-medium"><a>All Fruits</a></li>
+                <input type="text" placeholder="Search Here" />
+              </ul>
+            </div>
+            <div class="mr-5 rounded-e-full rounded-s-full ">
+              <input 
+                class="p-2 rounded-e-full rounded-s-full"
+                type="text"
+                placeholder="Search Here"
+              />
+            </div>
+          </div>
+        </div>
+      </nav>
       <!-- banner section -->
       <section>
-        <div class="carousel mx-1 mt-4 lg:mx-40 lg:mt-14">
+        <div class="carousel mx-1 mt-4 lg:mx-20 lg:mt-14">
           <!-- slide-1 -->
           <div id="slide1" class="carousel-item relative w-full">
             <img src="./images/banner1.png" class="w-full" />
@@ -169,28 +225,39 @@
           </div>
         </div>
       </section>
-      <section class="md:flex md:justify-between lg:max-w-2xl md:items-center md:relative md: bg-white md:rounded-lg md:p-3 md:-mt-20 md:m-auto hidden ">
-        <div>
-            <img src="./images/fruit1.png" alt="">
-            <h5 class=" mt-2 text-center text-base font-medium font-lato">Strawberry</h5>
+      <section
+        class="flex justify-between relative bg-white rounded-lg mx-40 p-3 -mt-20 m-auto"
+      >
+        <div class="max-h-10">
+          <img src="./images/fruit1.png" alt="" />
+          <h5 class="mt-2 text-center text-base font-medium font-lato">
+            Strawberry
+          </h5>
         </div>
         <div>
-            <img src="./images/fruit2.png" alt="">
-            <h5 class=" mt-2 text-center text-base font-medium font-lato">Orange</h5>
+          <img src="./images/fruit2.png" alt="" />
+          <h5 class="mt-2 text-center text-base font-medium font-lato">
+            Orange
+          </h5>
         </div>
         <div>
-            <img src="./images/fruit3.png" alt="">
-            <h5 class=" mt-2 text-center text-base font-medium font-lato">Mango</h5>
+          <img src="./images/fruit3.png" alt="" />
+          <h5 class="mt-2 text-center text-base font-medium font-lato">
+            Mango
+          </h5>
         </div>
         <div>
-            <img src="./images/fruit4.png" alt="">
-            <h5 class=" mt-2 text-center text-base font-medium font-lato">Strawberry</h5>
+          <img src="./images/fruit4.png" alt="" />
+          <h5 class="mt-2 text-center text-base font-medium font-lato">
+            Strawberry
+          </h5>
         </div>
         <div>
-            <img src="./images/fruit5.png" alt="">
-            <h5 class=" mt-2 text-center text-base font-medium font-lato">Mango</h5>
+          <img src="./images/fruit5.png" alt="" />
+          <h5 class="mt-2 text-center text-base font-medium font-lato">
+            Mango
+          </h5>
         </div>
-        
       </section>
     </header>
     <main></main>
